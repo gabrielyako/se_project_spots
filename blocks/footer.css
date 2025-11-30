@@ -1,15 +1,18 @@
 .footer {
-  max-width: 880px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   font-size: 14px;
   color: #212121;
 }
 
-.footer__line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(33, 33, 33, 0.4);
-  margin-bottom: 20px;
+
+.footer__text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #212121B2;
+  margin: 0;
+  text-align: center;
 }
