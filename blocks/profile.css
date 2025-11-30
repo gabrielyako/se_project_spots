@@ -14,6 +14,7 @@
 .profile__column {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .profile__name {
@@ -49,8 +50,58 @@
 }
 
 .profile__add-button {
-margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background-color: #1c1c1c;
+  color: #fcf5e5;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 12px; 
+  margin-left: auto;
+  margin-top: auto;
 }
+
+.profile__add-button:hover {
+  opacity: 0.8;
+}
+
+.profile__add-button img {
+  width: 12px;
+  height: 12px;
+}
+
+.profile__edit-button {
+  margin-top: auto;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.profile__edit-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
 
 @media screen and (max-width: 627px) {
     .profile {
