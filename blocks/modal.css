@@ -22,6 +22,7 @@
 }
 
 .modal__container {
+    box-sizing: border-box;  
     max-width: 730px;
     width: 100%;
     border-radius: 8px;
@@ -42,6 +43,13 @@
     font-size: 24px;
     color: #212121;
   cursor: pointer;
+   opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal__close-button:hover {
+    opacity: 0.6;
+    background-color: #f0f0f0;
 }
 
 .modal__row {
@@ -66,7 +74,7 @@ font-family: 'Inter', sans-serif;
 
 .modal__label {
     margin: 0 0 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
     font-size: 14px;
   font-weight: 500;
   display: block;
@@ -78,7 +86,7 @@ font-family: 'Inter', sans-serif;
     width: 100%;
     padding: 16px 12px;
     border: 1px solid rgba(33, 33, 33, 0.4);
-   font-family: 'Inter', sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;  
 }
 
@@ -143,12 +151,8 @@ font-family: 'Inter', sans-serif;
   }
 
   .modal__close-button {
-    position: absolute;
     top: 16px;
     right: 16px;
-    background: transparent;
-    border: none;
     font-size: 20px;
-    cursor: pointer;
   }
 }

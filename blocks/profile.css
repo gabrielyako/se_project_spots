@@ -35,7 +35,7 @@
     margin: 0;
     font-size: 16px;
     font-weight: 500;
-    color: #212121;
+    color: #212121B2 
     font-family: 'Poppins', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -45,9 +45,6 @@
      max-width: 420px;
 }
 
-.profile__edit-button {
-    margin-top: auto;
-}
 
 .profile__add-button {
   display: flex;
