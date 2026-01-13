@@ -85,12 +85,12 @@
             <form class="modal__form">
                 <label for="profile-name-input" class="modal__label">
                     Name
-                    <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name" />
+                    <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name" required />
                 </label>
 
                 <label for="profile-description-input" class="modal__label">
                     Description
-                    <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself" />
+                    <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself" required />
                 </label>
 
                 <button type="submit" class="modal__submit-button">Save</button>
@@ -99,23 +99,23 @@
     </div>
 
    
-    <div class="modal"id="new-post-modal">
+    <div class="modal" id="new-post-modal">
         <div class="modal__container">
             <div class="modal__row">
                 <h2 class="modal__title">New post</h2>
-               <button type="button" class="modal__close-button" aria-label="Close modal">
+               <button type="button" class="modal__close-button" aria-label="Close modal">X
 </button>
             </div>
 
             <form class="modal__form">
                 <label for="card-image-input" class="modal__label">
                     Image link
-                    <input id="card-image-input" type="text" class="modal__input" placeholder="Place a link to the picture" />
+                    <input id="card-image-input" type="text" class="modal__input" placeholder="Place a link to the picture" required />
                 </label>
 
                 <label for="post-description-input" class="modal__label">
                     Description
-                    <input id="post-description-input" type="text" class="modal__input" placeholder="Describe the post" />
+                    <input id="post-description-input" type="text" class="modal__input" placeholder="Describe the post" required />
                 </label>
 
                 <button type="submit" class="modal__submit-button">Save</button>
@@ -125,13 +125,10 @@
 
     <div class="modal" id="preview-modal">
         <div class="modal__image-container">
-            <div class="modal__row">
-                <img src="https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg" alt="" class="modal__image">
-                <p class="modal__caption">Golden Gate Bridge</p>
-               <button type="button" class="modal__close-button modal__close-button_preview" aria-label="Close preview modal">X</button>
-
-
-            </div>
+    <img src="..." alt="" class="modal__image">
+    <p class="modal__caption">Golden Gate Bridge</p>
+    <button type="button" class="modal__close-button modal__close-button_preview">X</button>
+</div>
 
             
         </div>

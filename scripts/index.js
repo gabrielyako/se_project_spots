@@ -1,7 +1,7 @@
 const initialCards = [
     {
         name: "Golden Gate Bridge",
-        link: " https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
+        link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg"
     },
     {
         name: "Val Thorens",
@@ -49,6 +49,8 @@ const profileDescriptionElement = document.querySelector(".profile__description"
 
 const cardTemplate = document.querySelector("#card-template").content.querySelector(".card");
 
+
+
 function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardTitleElement = cardElement.querySelector(".card__title");
@@ -57,7 +59,7 @@ function getCardElement(data) {
   const cardDeleteButton = cardElement.querySelector(".card__delete-button");
 
   cardImageElement.src = data.link.trim();
-  cardImageElement.alt = data.name;
+  cardImageElement.alt = data.name; 
   cardTitleElement.textContent = data.name;
 
   
@@ -70,10 +72,10 @@ function getCardElement(data) {
     cardDeleteButton.closest(".card").remove();
   });
 
-  
   const previewModal = document.querySelector("#preview-modal");
-  const previewImage = previewModal.querySelector(".modal__image");
-  const previewCaption = previewModal.querySelector(".modal__caption");
+const previewImage = previewModal.querySelector(".modal__image");
+const previewCaption = previewModal.querySelector(".modal__caption");
+
 
   cardImageElement.addEventListener("click", () => {
     previewImage.src = data.link;
@@ -132,12 +134,10 @@ function handleAddCardSubmit(evt) {
 
    const card = getCardElement(newCardData);
   
-  card.querySelector(".card__image").src = newCardData.link;
-  card.querySelector(".card__image").alt = newCardData.name;
-  card.querySelector(".card__title").textContent = newCardData.name;
   
   
-  const cardsList = document.querySelector(".cards__list");
+  
+  
   cardsList.prepend(card); 
 
   newPostForm.reset();
@@ -154,11 +154,7 @@ const cardsList = document.querySelector(".cards__list");
 initialCards.forEach(function (item) {
   const card = getCardElement(item);
 
-  card.querySelector(".card__image").src = item.link;
-  card.querySelector(".card__image").alt = item.name;
-  card.querySelector(".card__title").textContent = item.name;
 
-  console.log(card); 
 
   cardsList.appendChild(card); 
 });

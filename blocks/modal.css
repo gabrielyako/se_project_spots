@@ -133,8 +133,11 @@ position: relative;
 }
 
 .modal__caption {
-  color: white
-/* to do correctly */
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .modal__image {
@@ -144,6 +147,17 @@ position: relative;
   object-fit: contain;
   display: block;
   border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px 16px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 @media screen and (max-width: 627px) {
@@ -186,6 +200,11 @@ position: relative;
     font-size: 22px;
     margin-bottom: 24px;
     text-align: center;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+    padding: 10px 12px;
   }
 
   .modal__close-button {
