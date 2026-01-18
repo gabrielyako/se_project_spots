@@ -43,7 +43,7 @@
   width: 40px;
   height: 40px;
   background: #ccc url('../images/deleteButton.svg') center center no-repeat;
-  background-size: 50%; 
+  background-size: 100%; 
   border: none;
   border-radius: 50%;
   cursor: pointer;
