@@ -40,8 +40,8 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: #ccc url('../images/deleteButton.svg') center center no-repeat;
   background-size: 100%; 
   border: none;

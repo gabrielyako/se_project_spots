@@ -47,11 +47,14 @@
   cursor: pointer;
    opacity: 1;
     transition: opacity 0.3s ease;
+    background: url(../images/closeButtonWhite.svg) center center no-repeat;
+  background-size: 28px 28px;
+
 }
 
 .modal__close-button_preview {
-  top: 40px;
-  right: 40px;
+  top: 16px;
+  right: 16px;
   background: url(../images/closeButtonWhite.svg) center center no-repeat;
   background-size: 28px 28px;
 
@@ -81,7 +84,7 @@
 .modal__title {
 margin: 0;
 font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: #212121;
 }
@@ -153,6 +156,7 @@ position: relative;
 }
 
 .modal__image {
+  width: 100%;
   max-width: 80vw;
   max-height: 80vh;
   object-fit: contain;
