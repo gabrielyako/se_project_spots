@@ -53,8 +53,8 @@
 }
 
 .modal__close-button_preview {
-  top: 16px;
-  right: 16px;
+  top: 5px;
+  right: -48px;
   background: url(../images/closeButtonWhite.svg) center center no-repeat;
   background-size: 28px 28px;
 
